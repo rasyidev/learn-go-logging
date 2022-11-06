@@ -30,3 +30,8 @@
   - Error: `logger.Error()` 
   - Fatal: `logger.Fatal()` -> Memanggil `os.Exit(1)` setelah logging
   - Panic: `logger.Panic()` -> Memanggil `panic()` setelah logging
+
+## Output
+- Secara default, output tujuan log adalah Console (CLI)
+- Output logger berupa `io.Writer`
+- Tujuan log dapat diubah menggunakan Go-Lang `io.Writer`. Dengan demikian output dapat berupa file, database dll.
