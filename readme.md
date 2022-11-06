@@ -18,3 +18,15 @@
 - Struct utama pada Logrus untuk melakukan Logging
 - `Logger.New()`
 
+## Level
+- Penentuan prioritas atau jenis dari sebuah kejadian
+- Hal paling penting dalam Logging (secara general)
+- Level dimulai dari level rendah ke tinggi
+- Logrus mendukung banyak level:
+  - Trace: `logger.Trace()`
+  - Debug: `logger.Debug()`
+  - Info: `logger.Info()`
+  - Warn: `logger.Warn()`
+  - Error: `logger.Error()` 
+  - Fatal: `logger.Fatal()` -> Memanggil `os.Exit(1)` setelah logging
+  - Panic: `logger.Panic()` -> Memanggil `panic()` setelah logging
