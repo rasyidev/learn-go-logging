@@ -41,3 +41,8 @@
 - Default: TextFormatter
 - Format lain: JSONFormatter
 - `logger.SetFormatter()`
+
+## Field
+- Digunakan untuk menambahkan field baru ke dalam log
+- Dapat menggunakan metode chaining untuk menambahkan banyak field sekaligus
+- `logger.WithField`
