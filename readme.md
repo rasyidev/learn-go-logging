@@ -35,3 +35,9 @@
 - Secara default, output tujuan log adalah Console (CLI)
 - Output logger berupa `io.Writer`
 - Tujuan log dapat diubah menggunakan Go-Lang `io.Writer`. Dengan demikian output dapat berupa file, database dll.
+
+## Formatter
+- Output akan dibuat dengan format tertentu
+- Default: TextFormatter
+- Format lain: JSONFormatter
+- `logger.SetFormatter()`
