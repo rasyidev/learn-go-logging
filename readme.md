@@ -13,3 +13,8 @@
   - Zap     : https://github.com/uber-go/zap
   - Zerolog : https://github.com/rs/zerolog
   - dll.
+
+## `Logger`
+- Struct utama pada Logrus untuk melakukan Logging
+- `Logger.New()`
+
