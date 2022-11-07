@@ -46,3 +46,8 @@
 - Digunakan untuk menambahkan field baru ke dalam log
 - Dapat menggunakan metode chaining untuk menambahkan banyak field sekaligus
 - `logger.WithField`
+
+## Entry
+- Struct yang dibuat setiap mengirimkan log pada logrus
+- Entry sebenarnya sudah dibuatkan oleh logrus
+- Entry dapat dibuat secara manual dengan menggunakan `logrus.NewEntry()`
