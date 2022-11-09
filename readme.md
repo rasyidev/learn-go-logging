@@ -51,3 +51,12 @@
 - Struct yang dibuat setiap mengirimkan log pada logrus
 - Entry sebenarnya sudah dibuatkan oleh logrus
 - Entry dapat dibuat secara manual dengan menggunakan `logrus.NewEntry()`
+
+## Hook
+- Struct yang dapat ditambahkan ke logger sebagai **callback** yang akan dieksekusi ketika ada event log pada level tertentu
+- Dapat menambahkan multiple Hook ke dalam Logger
+- Contoh: Ketika ada error, kirim notifikasi ke channel slack
+- `logger.AddHook()`
+- Dua method yang wajib implement:
+  - `Levels()`
+  - `Fire()`
